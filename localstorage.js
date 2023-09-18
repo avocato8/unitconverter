@@ -7,7 +7,8 @@ offcanvas.addEventListener('show.bs.offcanvas', function(){
         let span = document.createElement("span");
         let data = localStorage.getItem(i);
 
-        if(data === ''){
+        if(data === null){
+            break;
         }
         else{        
             span.setAttribute('class', 'unitOffcanvas');

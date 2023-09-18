@@ -27,19 +27,17 @@ function putinBox(e){
                 unitContainer.appendChild(draggable);
             }
             // else{
-            //     //console.log(e);
             //     let first = unitContainer.innerHTML;
             //     let second = draggable.textContent;
             //     console.log(first);
             //     console.log(second);
             //     let temp = first;
 
-            //     first.textContent = second;
-            //     second.textContent = first;
-                
-            //     console.log(first);
+            //     // first.textContent = second;
+            //     // second.textContent = temp;
+
+            //     //console.log(first);
             //     console.log(draggable);
-            //     //let second = draggable.
 
             // }
         });

@@ -142,7 +142,7 @@ weight.addEventListener('click', function () {
 area.addEventListener('click', function () {
     unitBox.innerHTML = "";
     const metersquare = new Area('제곱미터');
-    const ftsquare = new Area('제곱 피트');
+    const ftsquare = new Area('제곱피트');
     const Acre = new Area('에이커');
     const Lsqure = new Area('평');
 
@@ -184,6 +184,7 @@ time.addEventListener('click', function () {
 volume.addEventListener('click', function () {
     unitBox.innerHTML = "";
     const l = new Volume('L');
+    const ml = new Volume('L');
     const oz = new Volume('온스');
     const pint = new Volume('파인트');
     const qt = new Volume('쿼트');
@@ -213,11 +214,25 @@ function placeOnContainer(className){
 var i = 0;
 function saveData(node) {
     let data = node.textContent;
+    //let keys = Object.keys(localStorage);
 
     localStorage.setItem(i, data);
     i++;
     if (i > 2) {
         i = 0;
     }
+
+
+    
+    // if (keys.length <= 3){
+    //     localStorage.setItem(data, 0);
+    // }
+    // else{
+    //     let oldestKey = keys[0];
+    //     localStorage.setItem(data, 0);
+    //     localStorage.removeItem(oldestKey);
+    // }
+
+    // localStorage.setItem(data, 0);
 }
 
