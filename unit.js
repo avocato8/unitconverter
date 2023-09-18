@@ -184,7 +184,7 @@ time.addEventListener('click', function () {
 volume.addEventListener('click', function () {
     unitBox.innerHTML = "";
     const l = new Volume('L');
-    const ml = new Volume('L');
+    const ml = new Volume('mL');
     const oz = new Volume('온스');
     const pint = new Volume('파인트');
     const qt = new Volume('쿼트');
